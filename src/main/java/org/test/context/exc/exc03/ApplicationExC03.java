@@ -5,9 +5,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import static org.test.context.Log.log;
 
 /**
- * Same as exc01, but factory method ConfBeanB#beanB has been renamed to ConfBeanB#beanC
+ * Similar to exc02 but this time we've renamed method ConfBeanC#beanC() into ConfBeanC#beanB(), so that we have two
+ * methods beanB and not as it was in exc02 two methods with name: beanC
  * <p>
- * Spring does not create BeanB because there are two factory methods with the same name and only first will get called
+ * The output is still the same, BeanB is missing.
  */
 class ApplicationExC03 {
 

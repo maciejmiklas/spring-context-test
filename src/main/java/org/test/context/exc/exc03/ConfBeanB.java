@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 class ConfBeanB {
 
     @Bean
-    BeanB beanC() {
+    BeanB beanB() {
         return new BeanB();
     }
 }

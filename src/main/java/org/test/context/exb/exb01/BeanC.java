@@ -5,7 +5,6 @@ import javax.annotation.PostConstruct;
 import static org.test.context.Log.log;
 
 class BeanC {
-
     public BeanC() {
         log("BeanC - constructor");
     }

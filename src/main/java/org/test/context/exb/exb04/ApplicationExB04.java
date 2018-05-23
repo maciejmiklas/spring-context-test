@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import static org.test.context.Log.log;
 
 /**
- * Same as exb01 but BeanB has been renamed to BeanXB, configuration name did not change.
+ * The same as exb01 but BeanB has been renamed to BeanXB, configuration name did not change.
  * <p>
  * This change did not influence instantiation order.
  */

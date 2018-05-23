@@ -6,8 +6,7 @@ import static org.test.context.Log.log;
 
 /**
  * BeanA, BeanB and BeanC are created trough dedicated configuration class: ConfBeanA, ConfBeanB and ConfBeanC.
- * <p>
- * Beans are created in order: A, B, C. However ist for now unclear why.
+ * BeanA injects BeanB and BeanC.
  */
 class ApplicationExC01 {
 

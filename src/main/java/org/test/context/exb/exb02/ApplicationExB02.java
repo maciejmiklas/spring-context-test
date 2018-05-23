@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import static org.test.context.Log.log;
 
 /**
- * Same as exb01 but we've changed configuration's import order from A,B,C into B,A,C.
+ * The same as exb01 but we've changed configuration's import order from A,B,C into B,A,C.
  * <p>
  * This does not influence beans instantiation order. Class order in @Import has no meaning,
  * <code>@Import({ConfBeanA.class, ConfBeanB.class, ConfBeanC.class})</code>
