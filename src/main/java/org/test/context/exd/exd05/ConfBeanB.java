@@ -1,14 +1,13 @@
-package org.test.context.exa.exa04;
+package org.test.context.exd.exd05;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.DependsOn;
 
 @Configuration
 class ConfBeanB {
 
     @Bean
-    @DependsOn("beanA")
+   // @Lazy
     BeanB beanB() {
         return new BeanB();
     }

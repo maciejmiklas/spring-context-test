@@ -1,14 +1,13 @@
-package org.test.context.exa.exa04;
+package org.test.context.exd.exd01;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
- * Same as exa03, but BeanB has @DependsOn("beanA")
+ * We have here three beans A, B, C, there are no dependencies between them. BeanC is being defined trough dedicated configuration class.
  * <p>
- * Spring loads dependent bean in a first place, it does not matter where it's located, Spring will scan all
- * possible configurations to locate it.
+ * Nothing special here, initialisation order is as expected.
  */
-class ApplicationExA04 {
+class ApplicationExD01 {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();

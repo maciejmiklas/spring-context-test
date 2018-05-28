@@ -5,9 +5,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import static org.test.context.Log.log;
 
 /**
- * Same as exb01, but configuration class ConfBeanB has been renamed to ConfBeanXB
+ * The same as exb01 but we've changed configuration's import order from A,B,C into B,A,C.
  * <p>
- * Instantiation order has changed form: D, A, B, C to: D, A, C, B.
+ * The instantiation order has changed. Spring load classes from @Import from left to the right side.
  */
 class ApplicationExB05 {
 

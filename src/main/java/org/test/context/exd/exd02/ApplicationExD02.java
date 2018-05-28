@@ -1,14 +1,13 @@
-package org.test.context.exa.exa04;
+package org.test.context.exd.exd02;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
- * Same as exa03, but BeanB has @DependsOn("beanA")
+ * The same as exd02, but we've annotated BeanB as lazy.
  * <p>
- * Spring loads dependent bean in a first place, it does not matter where it's located, Spring will scan all
- * possible configurations to locate it.
+ * Spring does not load BeanB at all, there are no dependencies to that bean.
  */
-class ApplicationExA04 {
+class ApplicationExD02 {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();

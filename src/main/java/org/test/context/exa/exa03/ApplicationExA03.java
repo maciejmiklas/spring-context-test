@@ -5,8 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 /**
  * Same as exa01, but BeanB comes from external config class: ConfBeanB
  * <p>
- * Spring loads bean definitions from local configuration in a first place, after that it processes the imports,
- * assuming thad there are no dependencies between beans.
+ * Spring loads bean definitions from imported configuration in a first place.
  */
 class ApplicationExA03 {
 

@@ -9,8 +9,7 @@ import static org.test.context.Log.log;
  * <code>@Import({ConfBeanA.class, ConfBeanB.class, ConfBeanC.class})</code> to
  * <code>@Import({ConfBeanA.class, ConfBeanC.class, ConfBeanB.class})</code>
  * <p>
- * We've seen in exb02 that import order does not influence bean creation order, that was the name of the
- * configuration class. Well.... no in this case! We've changed import order and now BeanC and not BeanB is missing.
+ * Now ConfBeanB will get scanned on the end and it overwrites previous bean with the same name.
  */
 class ApplicationExC04 {
 

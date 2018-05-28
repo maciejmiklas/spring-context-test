@@ -2,15 +2,12 @@ package org.test.context.exb.exb02;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
 
-@Import({ConfBeanA.class, ConfBeanXB.class, ConfBeanC.class})
 @Configuration
-class Conf {
+class ConfBeanXB {
 
     @Bean
-    BeanD beanD() {
-        return new BeanD();
+    BeanB beanB() {
+        return new BeanB();
     }
-
 }
