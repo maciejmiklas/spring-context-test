@@ -15,12 +15,12 @@ class BeanA {
     private BeanB beanB;
 
     public BeanA() {
-        log("BeanA - constructor");
+        log("BeanA - constructor, beanB:%s, beanC:%s", beanB, beanC);
     }
 
     @PostConstruct
     public void postConstruct() {
-        log("BeanA - postConstruct");
+        log("BeanA - postConstruct, beanB:%s, beanC:%s", beanB, beanC);
     }
 
     public void method() {

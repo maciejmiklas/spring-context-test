@@ -13,12 +13,12 @@ class BeanA {
     private List<MyInterface> beans;
 
     public BeanA() {
-        log("BeanA - constructor");
+        log("BeanA - constructor, beans:%s", beans);
     }
 
     @PostConstruct
     public void postConstruct() {
-        log("BeanA - postConstruct");
+        log("BeanA - postConstruct, beans:%s", beans);
     }
 
     public void method() {
